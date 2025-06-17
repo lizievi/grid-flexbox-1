@@ -16,11 +16,19 @@ header{
     grid-area: photos;
 }
 
-@media (max-width: 600px){
+@media (max-width: 768px){
     #container{
     display: grid;
     grid-template-areas: 'header'
                         'sidebar'
                         'photos';
+    }
+}
+
+@media (min-width: 768px){
+    #container{
+    display: grid;
+    grid-template-areas: 'header header'
+                        'sidebar photos';
     }
 }
